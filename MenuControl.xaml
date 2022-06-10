@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HrApp.Controls.MenuControl">
+    <ContentView.Content>
+           <!--
+                    <StackLayout Margin="-25,10,-25,0" VerticalOptions="CenterAndExpand">
+                <Grid RowDefinitions="auto,auto,auto,auto,auto" Padding="0" RowSpacing="0" HorizontalOptions="FillAndExpand">
+                    <Grid.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="Image">
+                                <Setter Property="HeightRequest" Value="200"></Setter>
+                                                                <Setter Property="Aspect" Value="AspectFit"></Setter>
+
+                            </Style>
+                                                        <Style TargetType="Label">
+
+                            </Style>
+                        </ResourceDictionary>
+                    </Grid.Resources>
+                       <Grid.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="0,-30,0,0"></On>
+            <On Platform="Android" Value="0,50,0,0"/>
+
+                    </OnPlatform>
+                           </Grid.Margin>
+                <Rectangle Fill="#00A7A3" Margin="-110,0,0,0" Grid.Row="0" Grid.RowSpan="3"
+           Stroke="#C2E3D3"
+           StrokeThickness="8" Rotation="45"
+           RadiusX="20"
+           RadiusY="20"
+           WidthRequest="300"
+           HeightRequest="300"
+           HorizontalOptions="Start" />
+                                    <Grid x:Name="firstItem" RowDefinitions="auto,auto" RowSpacing="0" Grid.Row="0" Margin="30,-140,60,-90"  HorizontalOptions="StartAndExpand">
+                                       
+                                        <Image x:Name="firstItemImage" Aspect="AspectFit"  Margin="0" Grid.Row="0">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                        <Label x:Name="firstItemText" Margin="80,-75,0,0" HorizontalOptions="CenterAndExpand" Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                      <Grid RowDefinitions="auto,auto" x:Name="secondItem" WidthRequest="230" RowSpacing="0" Grid.Row="1" Margin="112,-100,0,0" HorizontalOptions="StartAndExpand">
+                        <Image  x:Name="secondItemImage" Aspect="AspectFit"  Margin="0" Grid.Row="0"></Image>
+                        <Label  Margin="80,-75,-20,0" x:Name="secondItemText" HorizontalOptions="CenterAndExpand"  Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+         
+     <Grid RowDefinitions="auto,auto" x:Name="ThirdItem" RowSpacing="0" Grid.Row="2" HorizontalOptions="FillAndExpand"  Margin="20,-90,-190,30">
+                        <Image  x:Name="ThirdItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label  Margin="0,-75,0,0" x:Name="ThirdItemText"  HorizontalOptions="CenterAndExpand"   Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                    
+                  
+   <Grid RowDefinitions="auto,auto" WidthRequest="230" RowSpacing="0" x:Name="fourthItem"  Grid.Row="3" HorizontalOptions="Start"   Margin="110,-130,10,13">
+                        <Image  Margin="0" Grid.Row="0" x:Name="fourthItemImage"></Image>
+                        <Label  Margin="0,-75,0,0" x:Name="fourthItemText" HorizontalOptions="CenterAndExpand"  Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                 <Grid RowDefinitions="auto,auto" WidthRequest="230" x:Name="fifthItem"  RowSpacing="0" Grid.Row="4" HorizontalOptions="Start" Margin="30,-120,30,5">
+                        <Image  Margin="0" x:Name="fifthItemImage"  Grid.Row="0"></Image>
+                        <Label  Margin="0,-75,0,0" HorizontalOptions="CenterAndExpand" x:Name="fifthItemText"  Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                    </Grid>
+                        </StackLayout>
+
+        -->
+
+
+        <!--
+
+             <StackLayout Margin="-25,-50,-25,0" VerticalOptions="CenterAndExpand">
+                  <StackLayout.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="-25,60,-25,0"></On>
+            <On Platform="Android" Value="-25,-50,-25,0"/>
+
+                    </OnPlatform>
+                </StackLayout.Margin>
+                <Grid RowDefinitions="auto,auto,auto,auto,auto" Padding="0" Margin="0"  RowSpacing="0" HorizontalOptions="FillAndExpand">
+                    <Grid.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="Image">
+                                <Setter Property="HeightRequest" Value="200"></Setter>
+                                                                <Setter Property="Aspect" Value="AspectFit"></Setter>
+
+                            </Style>
+                                                        <Style TargetType="Label">
+
+                            </Style>
+                        </ResourceDictionary>
+                    </Grid.Resources>
+                       <Grid.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="0,-30,0,0"></On>
+            <On Platform="Android" Value="0,50,0,0"/>
+
+                    </OnPlatform>
+                           </Grid.Margin>
+                <Frame  Margin="-110,-10,0,0" VerticalOptions="FillAndExpand" Grid.Row="1" Grid.RowSpan="2"
+                        CornerRadius="20"
+                BackgroundColor="#C2E3D3" 
+                        
+           Rotation="45"
+          HasShadow="False"
+                             Padding="6"
+           WidthRequest="280"
+           HeightRequest="280"
+           HorizontalOptions="Start" >
+                    <Frame.Background>
+                        <LinearGradientBrush  StartPoint="0,0"
+                             EndPoint="1,0">
+                            <GradientStop Color="#C2E3D3"
+                          Offset="0.1"/>
+                            <GradientStop Color="#F0F3FB"
+                          Offset="1.0"/>
+                        </LinearGradientBrush>
+
+                    </Frame.Background>
+
+
+                    <Frame  
+                        CornerRadius="18"
+              
+                      
+        HasShadow="False"
+         Padding="5"
+                            
+           WidthRequest="280"
+           HeightRequest="280"
+           HorizontalOptions="Start" >
+                    <Frame.Background>
+                        <LinearGradientBrush  StartPoint="0,0"
+                             EndPoint="1,0">
+                            <GradientStop Color="#00A7A3"
+                          Offset="0.1"/>
+                            <GradientStop Color="#C2E3D3"
+                          Offset="1.0"/>
+                        </LinearGradientBrush>
+                        
+                    </Frame.Background>
+                   
+               
+
+                </Frame>
+                </Frame>
+                <StackLayout Margin="5,10,-20,0" Grid.Row="1" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
+                    <Label Text="{Binding PageTitle}" HorizontalTextAlignment="Center" WidthRequest="150"  FontSize="25" TextTransform="Uppercase"  TextColor="#214455" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" FontFamily="Poppins-Bold.ttf"></Label>
+
+                    </StackLayout>
+
+                                    <Grid x:Name="firstItem" RowDefinitions="auto,auto" WidthRequest="180" HeightRequest="180" RowSpacing="0" Grid.Row="0" VerticalOptions="StartAndExpand" Margin="20,-70,40,10"  HorizontalOptions="Start">
+                                      
+                                        <Image x:Name="firstItemImage" Grid.Row="0">
+                                          
+                                        </Image>
+                        <Label x:Name="firstItemText" HorizontalTextAlignment="Center" Margin="40,-80,-30,0" HorizontalOptions="CenterAndExpand"   Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                      <Grid x:Name="secondItem" RowDefinitions="auto,auto" WidthRequest="180" HeightRequest="180" RowSpacing="0" Grid.Row="1" Margin="110,-90,0,10" HorizontalOptions="StartAndExpand">
+                                
+                          <Image x:Name="secondItemImage" Aspect="AspectFit" HeightRequest="200" Margin="0" Grid.Row="0"></Image>
+                        <Label  x:Name="secondItemText" Margin="50,-80,-30,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                             
+                    
+                  
+
+     <Grid x:Name="ThirdItem" RowDefinitions="auto,auto" RowSpacing="0" WidthRequest="180" HeightRequest="180" Grid.Row="2" HorizontalOptions="FillAndExpand"  Margin="50,-55,-100,30">
+        
+         <Image  x:Name="ThirdItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label  x:Name="ThirdItemText" Margin="0,-70,0,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"   Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                    
+                  
+   <Grid   x:Name="fourthItem" RowDefinitions="auto,auto" WidthRequest="180" HeightRequest="180" RowSpacing="0" Grid.Row="3" HorizontalOptions="Start"   Margin="100,-110,10,13">
+      
+       <Image x:Name="fourthItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label   x:Name="fourthItemText" HorizontalTextAlignment="Center" Margin="0,-70,0,0" HorizontalOptions="CenterAndExpand"   Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                 <Grid x:Name="fifthItem" RowDefinitions="auto,auto" WidthRequest="180" HeightRequest="180"  RowSpacing="0" Grid.Row="4" HorizontalOptions="Start" Margin="5,-90,30,5">
+                          
+                     <Image  x:Name="fifthItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label x:Name="fifthItemText" HorizontalTextAlignment="Center" Margin="0,-70,0,0" HorizontalOptions="CenterAndExpand"   Padding="0" TextColor="#CEBFB3" Grid.Row="1" FontSize="16"></Label>
+                        </Grid>
+                    </Grid>
+                        </StackLayout>
+-->
+                               <StackLayout Margin="10,-70,0,0" VerticalOptions="StartAndExpand">
+                <Grid RowDefinitions="145,145,145,145,145" Padding="0"  RowSpacing="0" HorizontalOptions="FillAndExpand">
+                    <Grid.Resources>
+                        <ResourceDictionary>
+                            <Style TargetType="Image">
+                                <Setter Property="HeightRequest" Value="100"></Setter>
+                                                                <Setter Property="WidthRequest" Value="100"></Setter>
+
+                                                                <Setter Property="Aspect" Value="AspectFit"></Setter>
+
+                            </Style>
+                                                        <Style TargetType="Label">
+                                                            <Setter Property="FontSize" Value="13"></Setter>
+                            </Style>
+                        </ResourceDictionary>
+                    </Grid.Resources>
+                       <Grid.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="0,50,0,0"></On>
+            <On Platform="Android" Value="0,50,0,0"/>
+
+                    </OnPlatform>
+                           </Grid.Margin>
+                <Rectangle  Margin="-160,-43,0,0" VerticalOptions="StartAndExpand" Grid.Row="1" Grid.RowSpan="4"
+           
+           StrokeThickness="10" Rotation="45"
+           RadiusX="20"
+           RadiusY="20" 
+           WidthRequest="310"
+           HeightRequest="310"
+           HorizontalOptions="Start" >
+                    <Rectangle.Stroke>
+                          <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+<GradientStop Color="#C2E3D3" Offset="0.1" />
+<GradientStop Color="#F0F3FB" Offset="1.0" />
+</LinearGradientBrush>
+                    </Rectangle.Stroke>
+                   <Rectangle.Fill>
+                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+<GradientStop Color="#00A7A3" Offset="0.1" />
+<GradientStop Color="#C2E3D3" Offset="1.0" />
+</LinearGradientBrush>
+                   </Rectangle.Fill>
+                </Rectangle>
+                     <StackLayout Margin="-20,45,-20,0" Grid.Row="1"  Grid.RowSpan="4" VerticalOptions="StartAndExpand">
+ 
+              <Label Text="{Binding PageTitle}" WidthRequest="160" HorizontalOptions="StartAndExpand" Margin="-5,-15,0,0" FontSize="24"  TextColor="#214455"  HorizontalTextAlignment="Start" VerticalOptions="CenterAndExpand" TextTransform="Uppercase" FontFamily="Poppins-Bold.ttf"></Label>
+                    <Label WidthRequest="140" HorizontalTextAlignment="Start"  Margin="0,0,0,0" FontSize="13" Text="{Binding PageDesc}" TextColor="#214455"></Label>
+
+                    </StackLayout>
+                                    <Grid x:Name="firstItem" RowDefinitions="auto,auto" RowSpacing="0" Grid.Row="0" VerticalOptions="StartAndExpand" Margin="30,-20,0,30"  HorizontalOptions="StartAndExpand">
+                                   
+                                        <Image x:Name="firstItemImage" Grid.Row="0">
+                                            
+                                        </Image>
+                        <Label x:Name="firstItemText" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="45,0,0,0"  Padding="0" TextColor="#CEBFB3" Grid.Row="1"></Label>
+                        </Grid>
+                      <Grid x:Name="secondItem" RowDefinitions="auto,auto"  RowSpacing="0" Grid.Row="1" Margin="125,-70,0,10" HorizontalOptions="StartAndExpand">
+                                
+                          <Image x:Name="secondItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label x:Name="secondItemText" Margin="45,0,0,0" Grid.Row="1"  HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Padding="0" TextColor="#CEBFB3" >
+                           
+                        </Label>
+                        </Grid>
+         
+     <Grid x:Name="ThirdItem" RowDefinitions="auto,auto" RowSpacing="0" Grid.Row="2" HorizontalOptions="FillAndExpand"  Margin="185,-80,0,5">
+
+         <Image x:Name="ThirdItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label x:Name="ThirdItemText" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"  Margin="-20,0,0,0" Padding="0" TextColor="#CEBFB3" Grid.Row="1"></Label>
+                        </Grid>
+                    
+                  
+   <Grid x:Name="fourthItem" RowDefinitions="auto,auto"  RowSpacing="0" Grid.Row="3" HorizontalOptions="Start"   Margin="140,-120,0,5">
+           
+                            <Image x:Name="fourthItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label x:Name="fourthItemText" Margin="20,0,0,0" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Padding="0" TextColor="#CEBFB3" Grid.Row="1"></Label>
+       </Grid>
+                 <Grid x:Name="fifthItem" RowDefinitions="auto,auto" RowSpacing="0" Grid.Row="4" HorizontalOptions="Start" Margin="60,-185,0,5">
+                        
+                     <Image x:Name="fifthItemImage" Margin="0" Grid.Row="0"></Image>
+                        <Label x:Name="fifthItemText" Margin="20,0,0,0" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"  Padding="0" TextColor="#CEBFB3" Grid.Row="1"></Label>
+                        </Grid>
+                    </Grid>
+                        </StackLayout>
+
+    </ContentView.Content>
+</ContentView>
